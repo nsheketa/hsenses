@@ -17,5 +17,30 @@ $(document).ready(function () {
 
         $(this).toggleClass('menu__btn-active');
         $('.menu-wrapper').toggleClass('menu-wrapper__open');
+    });
+
+    //menu height
+
+    function menuHeight() {
+        var docHeight = $(document).height(),
+            menu = $('.menu-wrapper'),
+            mainSectionHeight = $('#main').outerHeight(),
+            footerHeight = $('#footer').outerHeight();
+
+        if ($(window).width()  > 768) {
+            menu.css({
+                // 'min-height': (mainSectionHeight+footerHeight) + 'px',
+                // 'max-height': (mainSectionHeight+footerHeight) + 'px',
+                'height': (mainSectionHeight+footerHeight) + 'px'
+            })
+        }
+        // else{
+        //     menu.css('height', '100px');
+        // }
+    }
+    menuHeight();
+
+    $(window).resize(function () {
+        menuHeight();
     })
 });
