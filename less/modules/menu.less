@@ -25,8 +25,8 @@
   background: url("@{rootUrl}homepage/logo.png")no-repeat center;
   -webkit-background-size: contain;
   background-size: contain;
-  .size(302px, 173px);
-  margin: 73px auto 124px 31px;
+  .size(258px, 121px);
+  margin: 98px auto 155px 52px;
 }
 
 .navigation{
@@ -58,10 +58,10 @@
   position: relative;
   text-transform: uppercase;
   color: #fff;
-  font-size: 25px;
+  font-size: 18px;
   letter-spacing: 1.9px;
   text-decoration: none;
-  margin-left: 9px;
+  //margin-left: 9px;
   .transition(0.3s all ease);
   &:hover,
   &:active,
@@ -108,7 +108,7 @@
 
 .menu-list__dropdown-link{
   color: #fff;
-  font-size: 25px;
+  font-size: 18px;
   text-decoration: none;
   .transition(0.3s all ease);
   &:hover,
@@ -193,13 +193,6 @@
       margin-bottom: 45px;
     }
   }
-  .menu-list__link{
-    margin-left: 0;
-    font-size: 22px;
-  }
-  .menu-list__dropdown-link{
-    font-size: 22px;
-  }
 
   .menu__logo-bottom{
     .size(260px, 43px);
@@ -215,8 +208,11 @@
     width: 100vw;
     .transition(0.3s all ease);
     &.menu-wrapper__open{
-      height: auto;
-      position: absolute;
+      //height: auto;
+      position: fixed;
+      height: 100vh;
+      overflow-y: scroll;
+      overflow-x: hidden;
       .menu__inner{
         display: block;
         .translate(0, 0);
@@ -240,25 +236,25 @@
   }
 
   .menu-list{
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
 
   .menu-list__item{
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     &:first-child{
-      margin-bottom: 25px;
+      margin-bottom: 15px;
     }
     &:nth-child(2){
-      margin-bottom: 25px;
+      margin-bottom: 15px;
     }
   }
 
   .menu-list__link{
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .menu-list__dropdown-link{
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .menu__logo-bottom{
