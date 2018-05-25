@@ -1,0 +1,74 @@
+#main{
+  position: relative;
+  padding-left: 345px;
+}
+
+.line-separator{
+  background-color: #b7d8e5;
+  .size(3px, 100%);
+  position: absolute;
+  left: 345px;
+  top: 0;
+  z-index: 10;
+}
+
+.triangle-down{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 5px 0 5px;
+  border-color: #ffffff transparent transparent transparent;
+  position: absolute;
+  right: -21px;
+  top: 15px;
+}
+.triangle-up{
+  display: none;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 5px 10px 5px;
+  border-color: transparent transparent #ffffff transparent;
+  position: absolute;
+  right: -21px;
+  top: 15px;
+}
+
+@media screen and (max-width: 1200px){
+  #main{
+    padding-left: 300px;
+  }
+  .line-separator{
+    left: 300px;
+  }
+
+  .triangle-down{
+    border-width: 8px 5px 0 5px;
+    right: -20px;
+    top: 13px;
+  }
+  .triangle-up{
+    border-width: 0 5px 8px 5px;
+    right: -20px;
+    top: 13px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  #main{
+    padding-left: 0;
+  }
+  .line-separator{
+    display: none;
+  }
+  .triangle-down{
+    border-width: 5px 5px 0 5px;
+    right: -20px;
+    top: 14px;
+  }
+  .triangle-up{
+    border-width: 0 5px 5px 5px;
+    right: -20px;
+    top: 11px;
+  }
+}
