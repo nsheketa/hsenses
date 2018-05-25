@@ -1,0 +1,57 @@
+.view{
+  background: url("@{rootUrl}homepage/panorama-bg.jpg")no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  .size(100%, 980px);
+  .section__heading{
+    color: #fff;
+  }
+}
+
+.view__content{
+  .section__content{
+    padding: 0 40px 0 168px;
+  }
+}
+
+.view__address{
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2.1px;
+}
+
+@media screen and (max-width: 1200px){
+  .view{
+    height: 800px;
+    background-position-x: left;
+  }
+
+  .view__address{
+   padding-left: 70px;
+  }
+
+  .view__content{
+    .section__content{
+      padding: 0 40px 0 70px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px){
+  .view__address{
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .view__address{
+    padding-left: 25px;
+  }
+
+  .view__content{
+    .section__content{
+      padding: 0 40px 0 25px;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.about-us{
+  padding-bottom: 203px;
+
+  .section__heading{
+    color: @colorBlue;
+  }
+}
+
+.about-us__img{
+  background: url("@{rootUrl}homepage/circles.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  .size(438px, 415px);
+  margin-left: auto;
+}
+
+.about-us__content{
+  padding: 82px 81px 10px 43px;
+}
+
+@media screen and (max-width: 1500px) {
+  .about-us__content {
+    padding: 62px 43px 10px 43px;
+  }
+
+  .about-us__img {
+    width: 382px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about-us {
+    padding-bottom: 100px;
+  }
+
+  .about-us__img {
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-us {
+    padding-bottom: 50px;
+  }
+}

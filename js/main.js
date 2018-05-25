@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    new WOW().init();
+
     //menu dropdown items
     $('.menu-list__dropdown-toggle').click(function (e) {
         e.preventDefault();
