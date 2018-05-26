@@ -4,20 +4,32 @@ body{
   }
 }
 
+.page-content__wrapper{
+  padding-bottom: 40px;
+  position: relative;
+  min-height: 100%;
+}
+
 #main{
   position: relative;
   padding-left: 345px;
+  margin-bottom: -40px;
+  height: 100%;
   width: 100%;
   overflow: hidden;
 }
 
+.main-content{
+  position: relative;
+}
+
 .line-separator{
   background-color: #b7d8e5;
-  .size(3px, 100%);
+  .size(5px, 100%);
   position: absolute;
   left: 345px;
   top: 0;
-  z-index: 10;
+  z-index: 9;
 }
 
 .triangle-down{
