@@ -17,6 +17,7 @@ $(document).ready(function () {
 
         $(this).toggleClass('menu__btn-active');
         $('.menu-wrapper').toggleClass('menu-wrapper__open');
+        $('body').toggleClass('no-scroll');
     });
 
     //menu height
