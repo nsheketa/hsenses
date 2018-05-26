@@ -52,6 +52,17 @@
 .contact-info__content{
 }
 
+.contact-info__phone{
+  display: inline-block;
+  color: @textColor;
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+    color: @textColor;
+    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.25);
+  }
+}
+
 @media screen and (max-width: 992px) {
   .contact-info__wrapper{
     width: 425px;
