@@ -39,6 +39,7 @@
   overflow-y: auto;
   margin-bottom: 44px;
   position: relative;
+  //border: 1px solid green;
   &::-webkit-scrollbar{
     background: rgba(255,255,255,0.5);
     width: 5px;
@@ -172,15 +173,15 @@
 
 .menu__logo-bottom{
   display: block;
-  background: url("@{rootUrl}homepage/logo-green.png")no-repeat center;
+  background: #6898ad url("@{rootUrl}homepage/logo-green.png")no-repeat center;
   -webkit-background-size: contain;
   background-size: contain;
-  .size(278px, 47px);
+  .size(278px, 115px);
   .center();
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 50px;
+  bottom: 0px;
   z-index: 10;
 }
 
@@ -189,6 +190,12 @@
   max-width: 80%;
   margin: auto;
   text-align: center;
+  background-color: #6898ad;
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  //border: 1px solid yellow;
 }
 
 .menu-footer__link{
@@ -235,21 +242,11 @@
   }
 
   .navigation{
-    margin-bottom: 100px;
+
   }
 
-  //.menu-list__item{
-  //  margin-bottom: 40px;
-  //  &:first-child{
-  //    margin-bottom: 45px;
-  //  }
-  //  &:nth-child(2){
-  //    margin-bottom: 45px;
-  //  }
-  //}
-
   .menu__logo-bottom{
-    .size(260px, 43px);
+    .size(260px, 115px);
   }
 }
 
@@ -265,8 +262,6 @@
       //height: auto;
       position: fixed;
       height: 100vh;
-      overflow-y: scroll;
-      overflow-x: hidden;
       .menu__inner{
         display: block;
         .translate(0, 0);
@@ -316,10 +311,6 @@
 
   .menu-footer__links{
     display: block;
-    position: absolute;
-    bottom: 50px;
-    left: 0;
-    right: 0;
   }
 
   .menu__btn{

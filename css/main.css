@@ -456,17 +456,17 @@ h2,
 }
 .menu__logo-bottom {
   display: block;
-  background: url("images/homepage/logo-green.png") no-repeat center;
+  background: #6898ad url("images/homepage/logo-green.png") no-repeat center;
   -webkit-background-size: contain;
   background-size: contain;
   width: 278px;
-  height: 47px;
+  height: 115px;
   margin-left: auto;
   margin-right: auto;
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 50px;
+  bottom: 0px;
   z-index: 10;
 }
 .menu-footer__links {
@@ -474,6 +474,11 @@ h2,
   max-width: 80%;
   margin: auto;
   text-align: center;
+  background-color: #6898ad;
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  right: 0;
 }
 .menu-footer__link {
   font-size: 16px;
@@ -515,12 +520,9 @@ h2,
     height: 148px;
     margin: 20px auto 100px;
   }
-  .navigation {
-    margin-bottom: 100px;
-  }
   .menu__logo-bottom {
     width: 260px;
-    height: 43px;
+    height: 115px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -537,8 +539,6 @@ h2,
   .menu-wrapper.menu-wrapper__open {
     position: fixed;
     height: 100vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
   }
   .menu-wrapper.menu-wrapper__open .menu__inner {
     display: block;
@@ -586,10 +586,6 @@ h2,
   }
   .menu-footer__links {
     display: block;
-    position: absolute;
-    bottom: 50px;
-    left: 0;
-    right: 0;
   }
   .menu__btn {
     display: block;
