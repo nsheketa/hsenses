@@ -1,16 +1,16 @@
-body{
-  &.no-scroll{
+body {
+  &.no-scroll {
     overflow: hidden;
   }
 }
 
-.page-content__wrapper{
+.page-content__wrapper {
   padding-bottom: 40px;
   position: relative;
   min-height: 100%;
 }
 
-#main{
+#main {
   position: relative;
   padding-left: 345px;
   margin-bottom: -40px;
@@ -19,11 +19,11 @@ body{
   overflow: hidden;
 }
 
-.main-content{
+.main-content {
   position: relative;
 }
 
-.line-separator{
+.line-separator {
   background-color: #b7d8e5;
   .size(7px, 100%);
   position: absolute;
@@ -32,7 +32,7 @@ body{
   z-index: 9;
 }
 
-.triangle-down{
+.triangle-down {
   width: 0;
   height: 0;
   border-style: solid;
@@ -42,7 +42,8 @@ body{
   right: -21px;
   top: 10px;
 }
-.triangle-up{
+
+.triangle-up {
   display: none;
   width: 0;
   height: 0;
@@ -54,7 +55,7 @@ body{
   top: 10px;
 }
 
-.btn{
+.btn {
   display: inline-block;
   font-size: 16px;
   color: @textColor;
@@ -68,37 +69,45 @@ body{
   .transition(0.3s all ease);
   &:hover,
   &:focus,
-  &:active{
+  &:active {
     color: @textColor;
     .box-shadow(0px 1px 5px 0px rgba(80, 91, 97, 0.73));
     .translate(1px, 1px);
   }
 }
 
-@media screen and (max-width: 1200px){
-  #main{
+.btn__sectionplan {
+  padding: 5px 0;
+  min-width: 138px;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 1200px) {
+  #main {
     padding-left: 300px;
   }
-  .line-separator{
+
+  .line-separator {
     left: 300px;
   }
 }
 
-@media screen and (max-width: 768px){
-  #main{
+@media screen and (max-width: 768px) {
+  #main {
     padding-left: 0;
   }
 
-  .line-separator{
+  .line-separator {
     display: none;
   }
 
-  .triangle-down{
+  .triangle-down {
     border-width: 5px 5px 0 5px;
     right: -20px;
     top: 9px;
   }
-  .triangle-up{
+
+  .triangle-up {
     border-width: 0 5px 5px 5px;
     right: -20px;
     top: 9px;
