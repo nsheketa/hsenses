@@ -2,6 +2,9 @@ $(document).ready(function () {
 
     new WOW().init();
 
+    // $('img[usemap]').rwdImageMaps();
+    $('img[usemap]').imageMap();
+
     //menu dropdown items
     $('.menu-list__dropdown-toggle').click(function (e) {
         e.preventDefault();
@@ -50,10 +53,26 @@ $(document).ready(function () {
 
     //location map zooming
 
-    $('.location-map__area').click(function () {
-       var areaZoomed = $('.location-map__zoomed');
-       areaZoomed.toggleClass('location-map__zoomed-active');
+    // $('.location-map__area').click(function () {
+    //    var areaZoomed = $('.location-map__zoomed');
+    //    areaZoomed.toggleClass('location-map__zoomed-active');
+    // });
+
+    $('.map-area').click(function () {
+        var areaZoomed = $('.location-map__zoomed'),
+            area = $('.map-area'),
+            img = $('#Image-Maps-Com-image-maps');
+        areaZoomed.toggleClass('location-map__zoomed-active');
+
+        // img.attr('src', './css/images/location-page/map2.png');
+
+        console.log($('.map-area').outerHeight());
     });
+
+    $('.location-map__zoomed').click(function () {
+        $(this).removeClass('location-map__zoomed-active');
+    });
+
 
     videoControls();
 
