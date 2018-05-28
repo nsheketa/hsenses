@@ -82,6 +82,58 @@ body {
   font-size: 13px;
 }
 
+.arrow-down{
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  &:before{
+    display: inline-block;
+    content: "";
+    height: 2px;
+    width: 26px;
+    background-color: #6898ad;
+    -webkit-transform: rotate(57deg) translate(-5px, 2px);
+    -ms-transform: rotate(57deg) translate(-5px, 2px);
+    transform: rotate(57deg) translate(-5px, 2px);
+  }
+  &:after{
+    display: inline-block;
+    content: "";
+    height: 2px;
+    width: 26px;
+    background-color: #6898ad;
+    -webkit-transform: rotate(-59deg) translate(25px, -5px);
+    -ms-transform: rotate(-59deg) translate(25px, -5px);
+    transform: rotate(-59deg) translate(25px, -5px);
+  }
+
+}
+
+.arrow-up{
+  bottom: 51px;
+  &:before{
+    display: inline-block;
+    content: "";
+    height: 2px;
+    width: 26px;
+    background-color: #6898ad;
+    -webkit-transform: rotate(119deg) translateY(5px);
+    -ms-transform: rotate(119deg) translateY(5px);
+    transform: rotate(119deg) translateY(5px);
+  }
+  &:after{
+    display: inline-block;
+    content: "";
+    height: 2px;
+    width: 26px;
+    background-color: #6898ad;
+    -webkit-transform: rotate(-123deg) translate(15px, 20px);
+    -ms-transform: rotate(-123deg) translate(15px, 20px);
+    transform: rotate(-123deg) translate(15px, 20px);
+  }
+}
+
+
 @media screen and (max-width: 1200px) {
   #main {
     padding-left: 300px;

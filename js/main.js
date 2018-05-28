@@ -37,6 +37,24 @@ $(document).ready(function () {
         });
     }
 
+    //location info toggle
+
+    $('.location-map__arrow').click(function (e) {
+        e.preventDefault();
+        var infoWrap = $('.location-map__info'),
+            arrow = $('.location-map__arrow');
+
+        arrow.toggleClass('active');
+        infoWrap.toggleClass('location-map__info-open');
+    });
+
+    //location map zooming
+
+    $('.location-map__area').click(function () {
+       var areaZoomed = $('.location-map__zoomed');
+       areaZoomed.toggleClass('location-map__zoomed-active');
+    });
+
     videoControls();
 
 

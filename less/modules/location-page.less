@@ -1,0 +1,136 @@
+.location__main-content{
+
+}
+
+.location-map__wrapper{
+  position: relative;
+}
+
+.location-map{
+  background: url("@{rootUrl}location-page/map.jpg")no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  .size(100%, 100vh);
+  position: relative;
+  min-height: 1154px;
+}
+
+.location-map__area{
+  position: absolute;
+  top: 300px;
+  right: 321px;
+  .border-radius(50%);
+  z-index: 2;
+  border: 1px solid red;
+  .square(380px);
+  cursor: pointer;
+}
+
+.location-map__zoomed{
+  background: transparent url("@{rootUrl}location-page/map-zoomin.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  .square(500px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  .border-radius(50%);
+  z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+  .scale(0.2);
+  .transition(0.3s all ease);
+  &.location-map__zoomed-active{
+    opacity: 1;
+    visibility: visible;
+    .scale(1);
+  }
+}
+
+.location-map__info{
+  height: 82px;
+  width: 538px;
+  padding-left: 74px;
+  .transition(0.3s all ease);
+  background-color: rgba(255,255,255,0.8);
+  position: absolute;
+  left: 64px;
+  top: 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  z-index: 10;
+  &.location-map__info-open{
+    padding: 144px 54px 40px 74px;
+    .size(538px, 988px);
+    .location-map__info-inner{
+      display: block;
+    }
+  }
+}
+
+.location-map__arrow{
+  position: absolute;
+  display: inline-block;
+  text-decoration: none;
+  .transition(0.3s all ease);
+  left: 74px;
+  .square(26px);
+  display: none;
+  &:hover,
+  &:focus,
+  &:active{
+    .scale(1.1);
+  }
+  &.active{
+    display: block;
+  }
+}
+
+.location-map__info-inner{
+  display: none;
+  .section__heading{
+    padding-left: 0;
+    margin-bottom: 63px;
+  }
+  .h3 {
+    margin-bottom: 20px;
+  }
+  .h2{
+    line-height: 1.1;
+  }
+}
+
+.location-map__info-content{
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  line-height: 2;
+  margin-bottom: 21px;
+}
+
+.location-map__info-instructions-wrap{
+  margin-bottom: 42px;
+}
+
+.location-map__info-instructions{
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  line-height: 2;
+  font-family: @subTitleFont;
+}
+
+.location-map__info-time{
+  display: inline-block;
+  margin-right: 10px;
+
+}
+
+.location-map__info-btn-wrap{
+  margin-bottom: 27px;
+}
+
+.location__btn{
+  min-width: 203px;
+}

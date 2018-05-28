@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Video</title>
+    <title>Location</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
@@ -96,20 +96,49 @@
 <div class="page-content__wrapper">
     <main id="main">
         <div class="line-separator"></div>
-        <div class="main-content video__main-content d-flex flex-column justify-content-center align-items-center">
-            <div class="video__wrapper">
-                <div class="video__title">Leasing video</div>
-
-                <div class="video">
-                    <div class="video__controls">&#x25ba;</div>
-                    <video controls preload poster="img/video-page/poster.png">
-                        <source src="img/video-page/video.mp4" type="video/mp4">
-                        <source src="img/video-page/video.ogg" type="video/ogg">
-                        Your browser does not support the video tag.
-                    </video>
+        <div class="main-content location__main-content">
+            <div class="location-map__wrapper">
+                <div class="location-map">
+                    <div class="location-map__area">
+                        <div class="location-map__zoomed"></div>
+                    </div>
                 </div>
-
+                <div class="location-map__info location-map__info-open">
+                    <a href="#" class="location-map__arrow arrow-down"></a>
+                    <div class="location-map__info-inner">
+                        <div class="section__heading">
+                            <div class="h3">H Senses<br>15 Middle road, TSIM SHA TSUI</div>
+                            <div class="h2">in the heart <br> of hearts</div>
+                        </div>
+                        <div class="location-map__info-content">
+                            H Senses enjoys close proximity to fully connected transport services.
+                            Hong Kong Island and Kowloon Tong are both within
+                            30 minutes’ reach, the location offers an interesting mix
+                            of all-rounded clientele.
+                        </div>
+                        <div class="location-map__info-instructions-wrap">
+                            <div class="location-map__info-instructions">Walking distance:</div>
+                            <div class="location-map__info-instructions">
+                                <span class="location-map__info-time">1 min</span> East TST Station (Exit K and L1)
+                            </div>
+                            <div class="location-map__info-instructions">
+                                <span class="location-map__info-time">3 min</span> TST Station (Exit E)
+                            </div>
+                            <div class="location-map__info-instructions">
+                                <span class="location-map__info-time">10 min</span> Star Ferry Pier
+                            </div>
+                        </div>
+                        <div class="location-map__info-btn-wrap">
+                            <a href="#" class="btn location__btn">To Google map</a>
+                        </div>
+                        <div class="location-map__info-btn-wrap">
+                            <a href="#" class="btn location__btn">See transportation</a>
+                        </div>
+                        <a href="#" class="location-map__arrow arrow-up active"></a>
+                    </div>
+                </div>
             </div>
+
         </div>
     </main>
     <footer id="footer">
