@@ -24,12 +24,17 @@
   padding-top: 86px;
 }
 
+.feature__item-care-wrapper{
+  .display-flex();
+  .jc-flex-end();
+}
+
 .features__img{
   position: absolute;
 }
 
 .features__img-1{
-  //background: url("@{rootUrl}homepage/feature-1.png")no-repeat center;
+  background: url("@{rootUrl}homepage/feature-1.png")no-repeat center;
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: contain;
@@ -40,7 +45,7 @@
 }
 
 .features__img-2{
-  //background: url("@{rootUrl}homepage/feature-2.png")no-repeat center;
+  background: url("@{rootUrl}homepage/feature-2.png")no-repeat center;
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: contain;
@@ -52,8 +57,7 @@
 
 .features__content-colored{
   height: 444px;
-  max-width: 565px;
-  min-width: 565px;
+  width: 565px;
   background-color: #c8c5be;
   padding: 0 65px;
 }
@@ -75,8 +79,6 @@
 
 @media screen and (max-width: 1700px){
   .features__img {
-    opacity: 0.7;
-    z-index: -1;
     .size(496px, 603px);
 
   }
@@ -88,15 +90,30 @@
 }
 
 @media screen and (max-width: 1500px){
+  .features{
+    .section__heading {
+      padding-left: 100px;
+    }
+  }
   .features__img-1{
-    width: 407px;
-    top: -255px;
+    //width: 407px;
+    //top: -255px;
+    height: 100%;
   }
   .features__img-2{
-    width: 487px;
-    height: 600px;
-    top: -298px;
+    //width: 487px;
+    //height: 600px;
+    //top: -298px;
     right: 0;
+    width: 100%;
+  }
+
+  .feature-design__inner {
+    padding: 13px 10px 10px 181px;
+  }
+
+  .features__content-colored{
+    width: 470px;
   }
 
   .feature__item-care{
@@ -152,7 +169,7 @@
     margin-left: -15px;
     margin-bottom: 30px;
     padding: 0 40px;
-    min-width: 300px;
+    //min-width: 300px;
   }
 
   .feature__headroom__inner{
@@ -180,13 +197,15 @@
   .feature__item{
     .section__content-subtitle{
       padding-left: 0px;
+      padding-top: 25px;
     }
     .section__content{
       padding-left: 0px;
     }
   }
   .features__content-colored{
-    padding-left: 40px;
+    padding: 25px 40px;
+    height: auto;
     max-width: 500px;
     margin-left: -15px;
   }
@@ -199,6 +218,11 @@
     margin-top: 30px;
   }
 
+  .features__img-1{
+    width: 80%;
+    height: auto;
+    min-height: 366px;
+  }
   .features__img-2{
     height: 566px;
     //width: 443px;

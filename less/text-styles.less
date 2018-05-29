@@ -1,7 +1,7 @@
 h1,.h1{
   font-family: @titleFont;
   text-transform: uppercase;
-  font-size: 48px;
+  font-size: 38px;
   letter-spacing: 4px;
   margin-bottom: 10px;
   text-align: right;
@@ -10,14 +10,14 @@ h1,.h1{
 .h1__subtitle{
   font-family: @titleFont;
   text-transform: uppercase;
-  font-size: 32px;
+  font-size: 26px;
   letter-spacing: 2.7px;
 }
 
 h2,.h2{
   font-family: @titleFont;
   text-transform: uppercase;
-  font-size: 52px;
+  font-size: 38px;
   letter-spacing: 3.9px;
 }
 
@@ -33,10 +33,11 @@ h2,.h2{
 .section__heading {
   padding-left: 84px;
   margin-bottom: 100px;
+  white-space: nowrap;
 }
 
 .section__content-subtitle{
-  font-size: 18px;
+  font-size: 12px;
   font-family: @subTitleFont;
   letter-spacing: 1.7px;
   margin-bottom: 50px;
@@ -46,25 +47,26 @@ h2,.h2{
   letter-spacing: 2px;
   line-height: 1.7;
   margin-bottom: 40px;
+  font-size: 12px;
 }
 
 
 @media screen and (max-width: 1500px){
-  h1,.h1{
-    font-size: 46px;
-  }
-
-  .h1__subtitle{
-    font-size: 30px;
-  }
-
-  h2,.h2{
-    font-size: 50px;
-  }
-
-  h3,.h3{
-    font-size: 25px
-  }
+  //h1,.h1{
+  //  font-size: 46px;
+  //}
+  //
+  //.h1__subtitle{
+  //  font-size: 30px;
+  //}
+  //
+  //h2,.h2{
+  //  font-size: 50px;
+  //}
+  //
+  //h3,.h3{
+  //  font-size: 25px
+  //}
 
   .section__content-subtitle{
     margin-bottom: 40px;
@@ -72,30 +74,30 @@ h2,.h2{
 }
 
 @media screen and (max-width: 1200px){
-  h1,.h1{
-    font-size: 45px;
-    margin-bottom: 5px;
-  }
-
-  .h1__subtitle{
-    font-size: 29px;
-  }
-
-  h2,.h2{
-    font-size: 45px;
-  }
-
-  h3,.h3{
-    font-size: 20px
-  }
+  //h1,.h1{
+  //  font-size: 45px;
+  //  margin-bottom: 5px;
+  //}
+  //
+  //.h1__subtitle{
+  //  font-size: 29px;
+  //}
+  //
+  //h2,.h2{
+  //  font-size: 45px;
+  //}
+  //
+  //h3,.h3{
+  //  font-size: 20px
+  //}
 
   .section__content-subtitle{
-    font-size: 16px;
+    //font-size: 16px;
     margin-bottom: 35px;
   }
 
   .section__content {
-    font-size: 15px;
+    //font-size: 15px;
     margin-bottom: 35px;
   }
 }
@@ -105,18 +107,18 @@ h2,.h2{
     font-size: 30px;
     margin-bottom: 5px;
   }
-
-  .h1__subtitle{
-    font-size: 20px;
-  }
-
-  h2,.h2{
-    font-size: 30px;
-  }
-
-  h3,.h3 {
-    font-size: 15px
-  }
+  //
+  //.h1__subtitle{
+  //  font-size: 20px;
+  //}
+  //
+  //h2,.h2{
+  //  font-size: 30px;
+  //}
+  //
+  //h3,.h3 {
+  //  font-size: 15px
+  //}
   .section__heading{
     margin-bottom: 50px;
     padding-left: 40px;
@@ -124,30 +126,40 @@ h2,.h2{
 }
 
 @media screen and (max-width: 768px){
-  h1,.h1{
-    font-size: 25px;
-    margin-bottom: 5px;
-  }
-
+  //h1,.h1{
+  //  font-size: 25px;
+  //  margin-bottom: 5px;
+  //}
+  //
   .h1__subtitle{
-    font-size: 15px;
+    font-size: 18px;
     letter-spacing: 3px;
   }
 
   h2,.h2{
-    font-size: 30px;
+    font-size: 25px;
   }
 
   h3,.h3{
     font-size: 15px
   }
 
-  .section__content-subtitle{
-    font-size: 14px;
+  .section__heading{
+    margin-bottom: 40px;
+    padding-left: 40px;
   }
 
   .section__content {
-    font-size: 14px;
     margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  h2,.h2{
+    font-size: 20px;
+  }
+
+  h3,.h3{
+    font-size: 13px
   }
 }

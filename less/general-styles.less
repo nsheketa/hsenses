@@ -12,7 +12,7 @@ body {
 
 #main {
   position: relative;
-  padding-left: 345px;
+  padding-left: 270px;
   margin-bottom: -40px;
   height: 100%;
   width: 100%;
@@ -27,7 +27,7 @@ body {
   background-color: #b7d8e5;
   .size(7px, 100%);
   position: absolute;
-  left: 345px;
+  left: 270px;
   top: 0;
   z-index: 9;
 }
@@ -57,7 +57,7 @@ body {
 
 .btn {
   display: inline-block;
-  font-size: 16px;
+  font-size: 12px;
   color: @textColor;
   text-decoration: none;
   .border-radius(90px);
@@ -79,58 +79,26 @@ body {
 .btn__sectionplan {
   padding: 5px 0;
   min-width: 138px;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .arrow-down{
   top: 0;
   bottom: 0;
   margin: auto;
-  &:before{
-    display: inline-block;
-    content: "";
-    height: 2px;
-    width: 26px;
-    background-color: #6898ad;
-    -webkit-transform: rotate(57deg) translate(-5px, 2px);
-    -ms-transform: rotate(57deg) translate(-5px, 2px);
-    transform: rotate(57deg) translate(-5px, 2px);
-  }
-  &:after{
-    display: inline-block;
-    content: "";
-    height: 2px;
-    width: 26px;
-    background-color: #6898ad;
-    -webkit-transform: rotate(-59deg) translate(25px, -5px);
-    -ms-transform: rotate(-59deg) translate(25px, -5px);
-    transform: rotate(-59deg) translate(25px, -5px);
-  }
+  background: url("@{rootUrl}location-page/arrow-down.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  .size(26px, 31px);
 
 }
 
 .arrow-up{
   bottom: 51px;
-  &:before{
-    display: inline-block;
-    content: "";
-    height: 2px;
-    width: 26px;
-    background-color: #6898ad;
-    -webkit-transform: rotate(119deg) translateY(5px);
-    -ms-transform: rotate(119deg) translateY(5px);
-    transform: rotate(119deg) translateY(5px);
-  }
-  &:after{
-    display: inline-block;
-    content: "";
-    height: 2px;
-    width: 26px;
-    background-color: #6898ad;
-    -webkit-transform: rotate(-123deg) translate(15px, 20px);
-    -ms-transform: rotate(-123deg) translate(15px, 20px);
-    transform: rotate(-123deg) translate(15px, 20px);
-  }
+  background: url("@{rootUrl}location-page/arrow-up.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  .size(26px, 31px);
 }
 
 .arrow-left{
@@ -143,13 +111,13 @@ body {
 
 
 @media screen and (max-width: 1200px) {
-  #main {
-    padding-left: 300px;
-  }
+  //#main {
+  //  padding-left: 300px;
+  //}
 
-  .line-separator {
-    left: 300px;
-  }
+  //.line-separator {
+  //  left: 300px;
+  //}
 }
 
 @media screen and (max-width: 768px) {
