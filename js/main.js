@@ -2,13 +2,13 @@ $(document).ready(function () {
 
     new WOW().init();
 
-    $('.parallax').parlx({
-        speed: 0.3,
-        height: '694px',
-        mobile: false,
-        direction: 'diagonal',
-        type: 'background'
-    });
+    // $('.parallax').parlx({
+    //     speed: 0.3,
+    //     height: '694px',
+    //     mobile: false,
+    //     direction: 'diagonal',
+    //     type: 'background'
+    // });
 
     // $('img[usemap]').rwdImageMaps();
     $('img[usemap]').imageMap();
@@ -29,6 +29,10 @@ $(document).ready(function () {
         $(this).toggleClass('menu__btn-active');
         $('.menu-wrapper').toggleClass('menu-wrapper__open');
         $('body').toggleClass('no-scroll');
+    });
+
+    $('.menu-list__dropdown-link').click(function (e) {
+        $('.menu-wrapper').removeClass('menu-wrapper__open');
     });
 
     //video controls
