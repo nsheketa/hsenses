@@ -12,8 +12,8 @@
 
 .contact-info__wrapper{
   background-color: rgba(255,255,255,0.8);
-  min-height: 83.5vh;
-  width: 526px;
+  min-height: 78vh;
+  width: 450px;
   padding-top: 144px;
   position: absolute;
   top: 0;
@@ -32,7 +32,7 @@
 }
 
 .contact-info{
-  font-size: 16px;
+  font-size: 12px;
   letter-spacing: 1.6px;
   height: 430px;
   padding-left: 55px;
@@ -63,11 +63,15 @@
     text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.25);
   }
 }
+@media screen and (max-width: 1200px) {
+  .contact-info__wrapper {
+    right: 25px;
+  }
+}
 
 @media screen and (max-width: 992px) {
   .contact-info__wrapper{
     width: 425px;
-    right: 0px;
     .section__heading {
       padding-left: 40px;
     }
@@ -88,7 +92,7 @@
     right: 0;
     width: 100%;
     height: auto;
-    min-height: 500px;
+    min-height: 465px;
     padding-top: 40px;
     padding-bottom: 40px;
     .ai-flex-start();

@@ -274,7 +274,15 @@
 }
 
 @media screen and (max-width: 1200px) {
-
+  .menu-wrapper{
+    width: 240px;
+  }
+  .menu__logo-bottom {
+    width: 190px;
+    height: 92px;
+    min-width: 190px;
+    min-height: 64px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -324,6 +332,10 @@
     display: none;
     .translate(0, -100px);
     height: 60%;
+  }
+
+  .menu-list{
+    .jc-space-around();
   }
 
   .menu-list__item {
