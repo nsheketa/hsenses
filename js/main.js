@@ -2,13 +2,7 @@ $(document).ready(function () {
 
     new WOW().init();
 
-    // $('.parallax').parlx({
-    //     speed: 0.3,
-    //     height: '694px',
-    //     mobile: false,
-    //     direction: 'diagonal',
-    //     type: 'background'
-    // });
+    $('.parallax').Parlx({ });
 
     // $('img[usemap]').rwdImageMaps();
     $('img[usemap]').imageMap();
