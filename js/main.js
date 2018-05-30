@@ -4,7 +4,6 @@ $(document).ready(function () {
 
     $('.parallax').Parlx({ });
 
-    // $('img[usemap]').rwdImageMaps();
     $('img[usemap]').imageMap();
 
     //menu dropdown items
@@ -27,6 +26,7 @@ $(document).ready(function () {
 
     $('.menu-list__dropdown-link').click(function (e) {
         $('.menu-wrapper').removeClass('menu-wrapper__open');
+        $('.menu__btn').removeClass('menu__btn-active');
     });
 
     //video controls
@@ -70,13 +70,13 @@ $(document).ready(function () {
         $(this).removeClass('location-map__zoomed-active');
     });
 
-    //smooth scrolling
+    // smooth scrolling
     $('.scroll__link').click(function () {
 
         var the_id = $(this).attr("href");
 
         $('html, body').animate({
-            scrollTop: $(the_id).offset().top
+            scrollTop: $(the_id).offset().top + '40px'
         }, 'slow');
 
         return false;

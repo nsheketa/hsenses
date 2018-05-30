@@ -11,9 +11,8 @@
 
 .parking-info__wrapper{
   background-color: rgba(255,255,255,0.8);
-  min-height: 83.5vh;
-  width: 450px;
-  padding-top: 0px;
+  .size(380px, 680px);
+  padding: 0px 35px 40px 35px;
   position: absolute;
   top: 0;
   right: 41px;
@@ -24,7 +23,7 @@
   border-bottom-right-radius: 10px;
   .section__heading{
     .as-flex-start();
-    padding-left: 40px;
+    padding-left: 0px;
     margin-bottom: 58px;
     position: relative;
   }
@@ -34,15 +33,10 @@
   background: transparent url('@{rootUrl}parking-page/icon.svg')no-repeat center;
   -webkit-background-size: contain;
   background-size: contain;
-  .square(83px);
+  .square(73px);
   position: absolute;
-  right: -71px;
+  right: -20px;
   top: 8px;
-}
-
-.parking-info{
-  padding-left: 40px;
-  padding-right: 40px;
 }
 
 .parking-info__content{
@@ -55,20 +49,8 @@
 
 @media screen and (max-width: 992px) {
   .parking-info__wrapper{
-    width: 425px;
-    right: 0px;
     .section__heading {
-      padding-left: 40px;
     }
-  }
-  .parking__icon {
-    width: 80px;
-    height: 80px;
-    right: -119px;
-    top: 3px;
-  }
-  .parking-info{
-    padding-left: 40px;
   }
 }
 
@@ -83,25 +65,28 @@
     right: 0;
     width: 100%;
     height: auto;
-    min-height: 500px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    min-height: 0px;
+    padding: 50px 0 80px;
     .ai-flex-start();
     .jc-flex-start();
     .section__heading {
       margin-bottom: 40px;
       width: 90%;
+      padding-left: 40px;
     }
   }
   .parking__icon {
-    top: 10px;
-    right: 0;
+    top: 0px;
+    right: 1px;
     width: 60px;
     height: 60px;
   }
   .parking-info__content{
     padding-left: 0;
     max-width: 90%;
+  }
+  .parking-info{
+    padding-left: 40px;
   }
 }
 
@@ -126,15 +111,9 @@
   }
 }
 
-@media screen and(min-height: 520px) and (max-height: 680px){
-  .parking-info__wrapper{
-    padding-top: 30px;
-    .section__heading {
-      margin-bottom: 20px;
-    }
-  }
-  .parking-info__content{
-    margin-bottom: 20px;
+@media screen and (min-width: 992px) and (max-height: 740px){
+  .parking__bg{
+    height: 800px;
   }
 }
 

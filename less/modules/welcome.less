@@ -44,6 +44,31 @@
   }
   .welcome__text{
     top: 60px;
-    right: 20px;
+    right: 0;
+    width: 100%;
+    text-align: left;
+    padding-left: 40px;
+    .h1{
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (max-width: 480px){
+  .welcome{
+    margin-top: 48px;
+    background: url("@{rootUrl}homepage/m-welcome-bg.jpg")no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  .welcome__text{
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding-left: 0px;
+    .h1{
+      text-align: center;
+    }
   }
 }

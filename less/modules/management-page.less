@@ -1,6 +1,6 @@
 .management__main-content{
   background-color: #a2a7aa;
-  padding: 97px 50px 100px 78px;
+  padding: 180px 50px 100px 50px;
   color: #fff;
   min-height: 100vh;
 }
@@ -13,7 +13,7 @@
   //border: 1px solid red;
   .section__heading{
     padding-left: 0;
-    margin-bottom: 92px;
+    margin-bottom: 72px;
   }
   .h3{
     position: absolute;
@@ -34,7 +34,7 @@
   background-size: contain;
   .size(124px, 129px);
   position: absolute;
-  bottom: -299px;
+  bottom: -256px;
   left: 0;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .managements-list__item-title-wrap{
-  margin-bottom: 54px;
+  margin-bottom: 34px;
 }
 
 .management-list__item-num{
@@ -84,7 +84,7 @@
   font-size: 12px;
   letter-spacing: 0.9px;
   line-height: 2;
-  min-height: 156px;
+  min-height: 166px;
   padding-bottom: 20px;
   margin-bottom: 33px;
   position: relative;
@@ -124,11 +124,6 @@
     max-width: 280px;
   }
 
-  //.management-about__logo{
-  //  bottom: 173px;
-  //  left: 100%;
-  //  margin-left: 42px;
-  //}
 
   .management-list__item {
     width: 33.33%;
@@ -138,18 +133,12 @@
 
 @media screen and (max-width: 1400px){
   .management-about {
-    //max-width: 30%;
-    //margin-bottom: 40px;
     max-width: 240px;
     .h2{
       font-size: 36px;
     }
 
   }
-  //.management-about__logo {
-  //  left: 79%;
-  //  margin-left: 0;
-  //}
   .management-list__item {
     max-width: 238px;
   }
@@ -189,7 +178,7 @@
     margin-bottom: 40px;
   }
   .management-list__item-content {
-    min-height: 260px;
+    min-height: 171px;
   }
   .management-list__item-btn-wrap{
     .btn{
@@ -204,11 +193,14 @@
     height: 107px;
     top: -36px;
   }
+  .management-list__item-content {
+    min-height: 261px;
+  }
 }
 
 @media screen and (max-width: 768px){
   .management__main-content{
-    padding: 200px 30px 50px 30px;
+    padding: 150px 30px 50px 30px;
   }
   .management-about {
     max-width: 100%;
@@ -229,8 +221,13 @@
     max-width: 100%;
     .display-flex();
     .flex-direction-col();
-    margin-bottom: 50px;
-    padding-bottom: 70px;
+    margin-bottom: 70px;
+    padding-bottom: 0;
+    &:first-child{
+      .management-list__item-content{
+        margin-bottom: 0;
+      }
+    }
   }
 
   .managements-list__item-title-wrap {
@@ -254,6 +251,7 @@
   .management-list__item-content{
     max-width: 70%;
     min-height: 90px;
+    margin-bottom: 15px;
   }
 }
 
@@ -264,12 +262,19 @@
     width: 68px;
     height: 59px;
     top: 10px;
-    margin-left: -36px;
+    margin-left: -68px;
   }
   .management-list__item-content {
     max-width: 93%;
   }
   .mangement-list__item-img {
-    max-width: 244px;
+    max-width: 65%;
+  }
+  .management-about .h3 {
+    top: -37px;
+  }
+  .management-list__item-content span{
+    margin-top: 20px;
+    position: relative;
   }
 }
