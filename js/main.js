@@ -2,7 +2,8 @@ $(document).ready(function () {
 
     new WOW().init();
 
-    $('.parallax').Parlx({ });
+// $('.parallax').parallax();
+    // $('.parallax').Parlx();
 
     $('img[usemap]').imageMap();
 

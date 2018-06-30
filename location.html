@@ -3,21 +3,29 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Location</title>
+    <title>H zentre - Location</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="x-rim-auto-match" content="none">
 
+
+    <link rel="shortcut icon" href="favicon.ico"/>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
     <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#fff">
+    <meta name="msapplication-config" content="browserconfig.xml" />
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap-addon.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css?v=3">
 </head>
 <body>
     <!--[if lte IE 9]>
@@ -50,6 +58,9 @@
                                 <a class="menu-list__dropdown-link" href="index.html#features">FEATURES
                                 </a>
                             </li>
+                        <li class="menu-list__dropdown-item">
+                            <a class="menu-list__dropdown-link" href="index.html#facts">FACTS & FIGURES</a>
+                        </li>
                             <li class="menu-list__dropdown-item">
                                 <a class="menu-list__dropdown-link" href="index.html#awards">AWARDS</a>
                             </li>
@@ -106,7 +117,8 @@
             <div class="main-content location__main-content">
                 <div class="location-map__zoomed"></div>
                 <div class="location-map__wrapper" id="location-map">
-                    <div class="location-map location-map-lg">
+                    <div class="location-map location-map-lg wow fadeIn" data-wow-duration="1s"
+                         data-wow-delay="0.1s" title="The map has been simplified and is used for reference only.">
                         <img id="Image-Maps-Com-image-maps" src="css/images/location-page/map.jpg"
                              border="0"
                              width="1569"
@@ -119,23 +131,28 @@
                                    coords="992,303,918,318,856,360,814,422,799,496,814,570,856,632,918,674,992,689,1066,674,1128,632,1170,570,1185,496,1170,422,1128,360,1066,318"
                                    style="outline:none;" target="_self" />
                         </map>
-                        <div class="location-map__area">
-                            <!--<div class="location-map__zoomed"></div>-->
-                        </div>
-
                     </div>
-                    <div class="location-map__info location-map__info-open">
+                    <div class="location-map__info location-map__info-open wow fadeIn" data-wow-duration="1s"
+                         data-wow-delay="0.3s">
                         <a href="#" class="location-map__arrow arrow-down"></a>
                         <div class="location-map__info-inner">
-                            <div class="section__heading">
-                                <div class="h3">H Senses<br>15 Middle road, TSIM SHA TSUI</div>
+                            <div class="section__heading wow fadeIn" data-wow-duration="1s"
+                                 data-wow-delay="0.1s">
+                                <div class="h3">H zentre<br>15 Middle road, TSIM SHA TSUI</div>
                                 <div class="h2">in the heart <br> of hearts</div>
                             </div>
                             <div class="location-map__info-content">
-                                H Senses enjoys close proximity to fully connected transport services.
-                                Hong Kong Island and Kowloon Tong are both within
-                                30 minutes’ reach, the location offers an interesting mix
-                                of all-rounded clientele.
+                                Situated on Middle Road, H zentre is surrounded by remarkable
+tourist sites and cultural landmarks, enjoying close proximity
+to fully connected transport services, with Tsim Sha Tsui,
+East Tsim Sha Tsui MTR Stations and Star Ferry Pier only
+footsteps away; and the forthcoming Express Rail Link West
+Kowloon Station just one stop apart. With Hong Kong Island and
+Kowloon Tong both within 30 minutes’ reach, the location offers
+an interesting mix of all-rounded clientele.<br/><br/>
+With ongoing and future developments in the neighbourhood,
+H zentre boasts a prestigious location with convenient access,
+offering a center of wellness in the heart of hearts.
                             </div>
                             <div class="location-map__info-instructions-wrap">
                                 <div class="location-map__info-instructions">Walking distance:</div>
@@ -146,7 +163,7 @@
                                     <span class="location-map__info-time">3 mins</span> TST Station (Exit E)
                                 </div>
                                 <div class="location-map__info-instructions">
-                                    <span class="location-map__info-time">10 min</span> Star Ferry Pier
+                                    <span class="location-map__info-time">10 mins</span> Star Ferry Pier
                                 </div>
                             </div>
                             <div class="location-map__info-btn-wrap">
@@ -161,12 +178,14 @@
                     </div>
                 </div>
                 <section class="transport" id="transport">
-                    <div class="section__heading">
+                    <div class="section__heading wow fadeIn" data-wow-duration="1s"
+                         data-wow-delay="0.1s">
                         <div class="h3">transportation</div>
                         <div class="h2">fully connected</div>
                     </div>
 
-                    <div class="transport-subsection">
+                    <div class="transport-subsection wow fadeIn" data-wow-duration="1s"
+                         data-wow-delay="0.3s">
                         <div class="transport-subsection__heading">
                             <div class="transport-subsection__heading-content">
                                 <span class="transport-subsection__heading-icon transport-subsection__heading-icon-1"></span> Bus
@@ -175,117 +194,205 @@
                         <div class="transport-subsection__content-wrapper">
                             <div class="row justify-content-between">
                                 <div class="col-12 col-md transport-subsection__content-inner">
-                                    <div class="ts__content-start-title ts__content-title">Start</div>
+                                    <!--<div class="ts__content-start-title ts__content-title">Start</div>-->
                                     <div class="ts__content-start ts__content">
                                         <div class="ts__content-start-num ts__content-num">87E</div>
-                                        <div class="ts__content-start-text">Nai Chung</div>
+                                        <div class="ts__content-direct d-block d-lg-none"></div>
+                                        <div class="ts__content-start-text">Nai Chung
+                                            <div class="ts__content-end-text d-block d-lg-none">Middle Road Tsim Sha Tsui</div>
+                                        </div>
                                     </div>
                                     <div class="ts__content-start ts__content">
                                         <div class="ts__content-start-num ts__content-num">230X</div>
-                                        <div class="ts__content-start-text">Allway Gardens Bus Terminus</div>
+                                        <div class="ts__content-direct d-block d-lg-none"></div>
+                                        <div class="ts__content-start-text">Allway Gardens Bus Terminus
+                                            <div class="ts__content-end-text d-block d-lg-none">Whampoa Garden Bus Terminus</div>
+                                        </div>
                                     </div>
                                     <div class="ts__content-start ts__content">
                                         <div class="ts__content-start-num ts__content-num">237A</div>
-                                        <div class="ts__content-start-text">Kwai Shing Central Bus Terminus</div>
+                                        <div class="ts__content-direct d-block d-lg-none"></div>
+                                        <div class="ts__content-start-text">Kwai Shing Central Bus Terminus
+                                            <div class="ts__content-end-text d-block d-lg-none">Tsim Sha Tsui East (Mody Road)</div>
+                                        </div>
                                     </div>
                                     <div class="ts__content-start ts__content">
                                         <div class="ts__content-start-num ts__content-num">242X</div>
-                                        <div class="ts__content-start-text">Cheung Hang Bus Terminus</div>
+                                        <div class="ts__content-direct d-block d-lg-none"></div>
+                                        <div class="ts__content-start-text">Cheung Hang Bus Terminus
+                                            <div class="ts__content-end-text d-block d-lg-none">Middle Road Tsim Sha Tsui</div>
+                                        </div>
                                     </div>
                                     <div class="ts__content-start ts__content">
                                         <div class="ts__content-start-num ts__content-num">252B</div>
-                                        <div class="ts__content-start-text">Handsome Court</div>
+                                        <div class="ts__content-direct d-block d-lg-none"></div>
+                                        <div class="ts__content-start-text">Tuen Mun Pier Head Bus Terminus
+                                            <div class="ts__content-end-text d-block d-lg-none">Middle Road Tsim Sha Tsui</div>
+                                        </div>
                                     </div>
                                     <div class="ts__content-start ts__content">
                                         <div class="ts__content-start-num ts__content-num">259B</div>
-                                        <div class="ts__content-start-text">Tuen Mun Pier Head B/T</div>
+                                        <div class="ts__content-direct d-block d-lg-none"></div>
+                                        <div class="ts__content-start-text">Cheung Hang Bus Terminus
+                                            <div class="ts__content-end-text d-block d-lg-none">Middle Road Tsim Sha Tsui</div>
+                                        </div>
                                     </div>
                                     <div class="ts__content-start ts__content">
                                         <div class="ts__content-start-num ts__content-num">259C</div>
-                                        <div class="ts__content-start-text">Sun Tuen Mun Centre</div>
+                                        <div class="ts__content-direct d-block d-lg-none"></div>
+                                        <div class="ts__content-start-text">Sun Tuen Mun Centre
+                                            <div class="ts__content-end-text d-block d-lg-none">Middle Road Tsim Sha Tsui</div>
+                                        </div>
                                     </div>
                                     <div class="ts__content-start ts__content">
                                         <div class="ts__content-start-num ts__content-num">260B</div>
-                                        <div class="ts__content-start-text">Tuen Mun Central Bus Terminus</div>
+                                        <div class="ts__content-direct d-block d-lg-none"></div>
+                                        <div class="ts__content-start-text">Tuen Mun Central Bus Terminus
+                                            <div class="ts__content-end-text d-block d-lg-none">Middle Road Tsim Sha Tsui</div>
+                                        </div>
                                     </div>
                                     <div class="ts__content-start ts__content">
                                         <div class="ts__content-start-num ts__content-num">261B</div>
-                                        <div class="ts__content-start-text">Sam Shing Bus Terminus</div>
+                                        <div class="ts__content-direct d-block d-lg-none"></div>
+                                        <div class="ts__content-start-text">Sun Tuen Mun Centre
+                                            <div class="ts__content-end-text d-block d-lg-none">Kowloon Station Bus Terminus</div>
+                                        </div>
                                     </div>
                                     <div class="ts__content-start ts__content">
                                         <div class="ts__content-start-num ts__content-num">A21</div>
-                                        <div class="ts__content-start-text">Airport (Ground Transportation Centre)</div>
+                                        <div class="ts__content-direct d-block d-lg-none"></div>
+                                        <div class="ts__content-start-text">Sun Tuen Mun Centre
+                                            <div class="ts__content-end-text d-block d-lg-none">Hung Hom Station</div>
+                                        </div>
                                     </div>
                                     <div class="ts__content-start ts__content">
                                         <div class="ts__content-start-num ts__content-num">N21</div>
-                                        <div class="ts__content-start-text">Airport (Ground Transportation Centre)</div>
+                                        <div class="ts__content-direct d-block d-lg-none"></div>
+                                        <div class="ts__content-start-text">Sun Tuen Mun Centre
+                                            <div class="ts__content-end-text d-block d-lg-none">Tsim Sha Tsui (Star Ferry)</div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div  class="col-12 col-lg-auto d-flex align-items-center justify-content-center transport__arrow">
-                                    <span class="arrow-left"></span>
+                                <div  class="col-12 col-lg-auto d-none d-lg-block  align-items-center justify-content-center transport__arrow">
+                                    <span class="arrow-left-right"></span>
                                 </div>
-                                <div class="col-12 col-md transport-subsection__content-inner">
-                                    <div class="ts__content-end-title ts__content-title">End</div>
+                                <div class="col-12 col-md transport-subsection__content-inner d-none d-lg-block">
+                                    <!--<div class="ts__content-end-title ts__content-title">End</div>-->
                                     <div class="ts__content-end ts__content">
                                         <div class="ts__content-end-num ts__content-num d-block d-lg-none">87E</div>
                                         <div class="ts__content-end-text">Middle Road Tsim Sha Tsui</div>
-                                        <div class="ts__content-end-num ts__content-num  d-none d-lg-block">87E</div>
                                     </div>
                                     <div class="ts__content-end ts__content">
                                         <div class="ts__content-end-num ts__content-num d-block d-lg-none">230X</div>
-                                        <div class="ts__content-end-text">Whampoa Garden B/T</div>
-                                        <div class="ts__content-end-num ts__content-num d-none d-lg-block">230X</div>
+                                        <div class="ts__content-end-text">Whampoa Garden Bus Terminus</div>
                                     </div>
                                     <div class="ts__content-end ts__content">
                                         <div class="ts__content-end-num ts__content-num d-block d-lg-none">237A</div>
                                         <div class="ts__content-end-text">Tsim Sha Tsui East (Mody Road)</div>
-                                        <div class="ts__content-end-num ts__content-num d-none d-lg-block">237A</div>
                                     </div>
                                     <div class="ts__content-end ts__content">
                                         <div class="ts__content-end-num ts__content-num d-block d-lg-none">242X</div>
                                         <div class="ts__content-end-text">Middle Road Tsim Sha Tsui</div>
-                                        <div class="ts__content-end-num ts__content-num d-none d-lg-block">242X</div>
                                     </div>
                                     <div class="ts__content-end ts__content">
                                         <div class="ts__content-end-num ts__content-num d-block d-lg-none">252B</div>
                                         <div class="ts__content-end-text">Middle Road Tsim Sha Tsui</div>
-                                        <div class="ts__content-end-num ts__content-num d-none d-lg-block">252B</div>
                                     </div>
                                     <div class="ts__content-end ts__content">
                                         <div class="ts__content-end-num ts__content-num d-block d-lg-none">259B</div>
                                         <div class="ts__content-end-text">Middle Road Tsim Sha Tsui</div>
-                                        <div class="ts__content-end-num ts__content-num d-none d-lg-block">259B</div>
                                     </div>
                                     <div class="ts__content-end ts__content">
                                         <div class="ts__content-end-num ts__content-num d-block d-lg-none">259C</div>
                                         <div class="ts__content-end-text">Middle Road Tsim Sha Tsui</div>
-                                        <div class="ts__content-end-num ts__content-num d-none d-lg-block">259C</div>
                                     </div>
                                     <div class="ts__content-end ts__content">
                                         <div class="ts__content-end-num ts__content-num d-block d-lg-none">260B</div>
                                         <div class="ts__content-end-text">Middle Road Tsim Sha Tsui</div>
-                                        <div class="ts__content-end-num ts__content-num d-none d-lg-block">260B</div>
                                     </div>
                                     <div class="ts__content-end ts__content">
                                         <div class="ts__content-end-num ts__content-num d-block d-lg-none">261B</div>
-                                        <div class="ts__content-end-text">Kowloon Station B/T</div>
-                                        <div class="ts__content-end-num ts__content-num d-none d-lg-block">261B</div>
+                                        <div class="ts__content-end-text">Kowloon Station Bus Terminus</div>
                                     </div>
                                     <div class="ts__content-end ts__content">
                                         <div class="ts__content-end-num ts__content-num d-block d-lg-none">A21</div>
                                         <div class="ts__content-end-text">Hung Hom Station</div>
-                                        <div class="ts__content-end-num ts__content-num d-none d-lg-block">A21</div>
                                     </div>
                                     <div class="ts__content-end ts__content">
                                         <div class="ts__content-end-num ts__content-num d-block d-lg-none">N21</div>
                                         <div class="ts__content-end-text">Tsim Sha Tsui (Star Ferry)</div>
-                                        <div class="ts__content-end-num ts__content-num d-none d-lg-block">N21</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="transport-subsection">
+                    <div class="transport-subsection wow fadeIn" data-wow-duration="1s"
+                         data-wow-delay="0.3s">
+                        <div class="transport-subsection__heading">
+                            <div class="transport-subsection__heading-content minibus">
+                                <span class="transport-subsection__heading-icon transport-subsection__heading-icon-3"></span> Mini Bus
+                            </div>
+                        </div>
+                        <div class="transport-subsection__content-wrapper">
+                            <div class="row justify-content-between">
+                                <div class="col-12 col-md transport-subsection__content-inner">
+                                    <!--<div class="ts__content-start-title ts__content-title">Start</div>-->
+                                    <div class="ts__content-start ts__content">
+                                        <div class="ts__content-start-num ts__content-num">8</div>
+                                        <div class="ts__content-direct d-block d-lg-none"></div>
+                                        <div class="ts__content-start-text">Ho Man Tin Estate
+                                            <div class="ts__content-end-text d-block d-lg-none">Tsim Sha Tsui (Hankow Road)</div>
+                                        </div>
+                                    </div>
+                                    <div class="ts__content-start ts__content">
+                                        <div class="ts__content-start-num ts__content-num">8S</div>
+                                        <div class="ts__content-direct d-block d-lg-none"></div>
+                                        <div class="ts__content-start-text">Ho Man Tin
+                                            <div class="ts__content-end-text d-block d-lg-none">Tsim Sha Tsui (Hankow Road)</div>
+                                        </div>
+                                    </div>
+                                    <div class="ts__content-start ts__content">
+                                        <div class="ts__content-start-num ts__content-num">77M</div>
+                                        <div class="ts__content-direct d-block d-lg-none"></div>
+                                        <div class="ts__content-start-text">Kowloon Station
+                                            <div class="ts__content-end-text d-block d-lg-none">East Tsim Sha Tsui Station</div>
+                                        </div>
+                                    </div>
+                                    <div class="ts__content-start ts__content">
+                                        <div class="ts__content-start-num ts__content-num">606S</div>
+                                        <div class="ts__content-direct d-block d-lg-none"></div>
+                                        <div class="ts__content-start-text">Yuen Long (Fung Cheung Road)
+                                            <div class="ts__content-end-text d-block d-lg-none">Tsim Sha Tsui East</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div  class="col-12 col-lg-auto d-none d-lg-block  align-items-center justify-content-center transport__arrow">
+                                    <span class="arrow-left-right"></span>
+                                </div>
+                                <div class="col-12 col-md transport-subsection__content-inner d-none d-lg-block ">
+                                    <!--<div class="ts__content-end-title ts__content-title">End</div>-->
+                                    <div class="ts__content-end ts__content">
+                                        <div class="ts__content-end-num ts__content-num d-block d-lg-none">8</div>
+                                        <div class="ts__content-end-text">Tsim Sha Tsui (Hankow Road)</div>
+                                    </div>
+                                    <div class="ts__content-end ts__content">
+                                        <div class="ts__content-end-num ts__content-num d-block d-lg-none">8S</div>
+                                        <div class="ts__content-end-text">Tsim Sha Tsui (Hankow Road)</div>
+                                    </div>
+                                    <div class="ts__content-end ts__content">
+                                        <div class="ts__content-end-num ts__content-num d-block d-lg-none">77M</div>
+                                        <div class="ts__content-end-text">East Tsim Sha Tsui Station</div>
+                                    </div>
+                                    <div class="ts__content-end ts__content">
+                                        <div class="ts__content-end-num ts__content-num d-block d-lg-none">606S</div>
+                                        <div class="ts__content-end-text">Tsim Sha Tsui East</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transport-subsection wow fadeIn" data-wow-duration="1s"
+                         data-wow-delay="0.5s">
                         <div class="transport-subsection__heading">
                             <div class="transport-subsection__heading-content">
                                 <span class="transport-subsection__heading-icon transport-subsection__heading-icon-2"></span> MTR
@@ -293,10 +400,11 @@
                         </div>
                         <div class="transport-subsection__content-wrapper transport-subsection__mtr">
                             <div class="row justify-content-between">
-                                <div class="col-12">
-                                    <div class="ts__content-start ts__content">
-                                        Exit K, East Tsim Sha Tsui MTR Station
-                                    </div>
+                                <div class="col-12 margin-bottom-20 margin-bottom-xs-15">
+                                        Exit K and Exit L1, East Tsim Sha Tsui MTR Station
+                                </div>
+                                <div class="col-12 margin-bottom-20 margin-bottom-xs-15">
+                                        Exit E, Tsim Sha Tsui Station
                                 </div>
                             </div>
                         </div>

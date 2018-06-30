@@ -3,14 +3,22 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Video</title>
+    <title>H zentre - Video</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="x-rim-auto-match" content="none">
 
+
+    <link rel="shortcut icon" href="favicon.ico"/>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
     <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#fff">
+    <meta name="msapplication-config" content="browserconfig.xml" />
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/normalize.css">
@@ -49,6 +57,9 @@
                         <li class="menu-list__dropdown-item">
                             <a class="menu-list__dropdown-link" href="index.html#features">FEATURES
                             </a>
+                        </li>
+                        <li class="menu-list__dropdown-item">
+                            <a class="menu-list__dropdown-link" href="index.html#facts">FACTS & FIGURES</a>
                         </li>
                         <li class="menu-list__dropdown-item">
                             <a class="menu-list__dropdown-link" href="index.html#awards">AWARDS</a>
@@ -105,13 +116,13 @@
             <div class="line-separator"></div>
             <div class="main-content video__main-content d-flex flex-column justify-content-center align-items-center">
                 <div class="video__wrapper">
-                    <div class="video__title">Leasing video</div>
-
-                    <div class="video">
-                        <div class="video__controls">►</div>
+                    <div class="video__title  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                        Leasing video
+                    </div>
+                    <div class="video ">
+                        <!--<div class="video__controls">►</div>-->
                         <video controls preload poster="img/video-page/poster.png">
                             <source src="img/video-page/video.mp4" type="video/mp4">
-                            <source src="img/video-page/video.ogg" type="video/ogg">
                             Your browser does not support the video tag.
                         </video>
                     </div>
